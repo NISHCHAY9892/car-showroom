@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #626fa8;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+ position: relative;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #010407;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+    <center><h1><u>JAGUAR CARS</u> </h1></center>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="2.webp" alt="CAR1" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>JAGUAR F-TYPE</h1> 
+      <p>The Jaguar F-TYPE has 2 Petrol Engine on offer. The Petrol engine is 1 cc and 5000 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the F-TYPE has a mileage of & Ground clearance of F-TYPE is 100mm. The F-TYPE is a 2 seater 8 cylinder car and has length of 4470mm, width of 2042mm and a wheelbase of 2622mm.</p> 
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="3.jpg" alt="CAR2" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>JAGUAR SEDAN</h1> 
+        <p>Jaguar Sedan With a top speed of 200 mph, the F-Type SVR is the fastest of all series-production Jaguar cars. Its 5.0L supercharged V8 churns out 575 horsepower. Jaguar Project 8: Also clocking in at 200 mph, this high-performance version of the XE sedan produces 592 hp with its 5.0L supercharged AJ-V8.</p> 
+      </div>
+    </div>
+  </div>
+</body>
+</html>
